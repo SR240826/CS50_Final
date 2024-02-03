@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(34, 77, 80, 1) !important;
+    padding-top: 0%;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+}
+#logo {
+    font-family: 'Carter One', system-ui !important;
+    color: rgba(255, 165, 0, 1) !important;
+    letter-spacing: 2px;
+    left: 2.5vw !important;
+    font-size:larger !important;
+}
+
+canvas {
+    border: 1px solid black;
+    position: relative;
+    justify-content: center;
+    left: 15vw;
+    
+}
+img {
+    display: none;
+}
+
+#time, #username {
+    position: absolute;
+    color: bisque;
+}
+#button {
+    display: block;
+    position: absolute;
+}
+
+#scoreplate {
+    position: absolute;
+    color: bisque;
+}
+.credits {
+    position: relative;
+    font-size: small;
+    color: bisque;
+}
+.credits > p {
+    text-align-last: right;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    padding-right: 15vw;
+}
+.credits > p {
+    font-weight: bold;
+}
+
+.credits > p > a {
+    font-weight: normal;
+}
+
+.tutorial {
+    position: absolute !important;
+    font-size: small;
+}
+
+.tutorial, #tutorial {
+    font-weight: bold;
+}
+
+.tutorial-text {
+    font-weight: normal;
+}
+
+.navbar {
+    position: fixed !important;
+    z-index: 1000;
+}
