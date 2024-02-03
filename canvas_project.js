@@ -23,11 +23,8 @@ button.style.left = cshape.x + canvas.width * 0.5 + "px";
 newPlayer = new Player(canvas, c, "#ff5900", canvas.width/80, canvas.width/80);
 controlkey = new keys("a", "d", "w", "s", newPlayer, 0, 0, canvas);
 credits.style.top = innerHeight * 0.15+ "px";
-console.log(cshape.x)
 tutorial_button.style.top = button.getBoundingClientRect().y + button.getBoundingClientRect().height + 10 + "px";
 tutorial_button.style.left = cshape.x + canvas.width * 0.5 - tutorial_button.getBoundingClientRect().width * 0.25 + "px";
-// credits.style.left = cshape.x + (cshape.width * 0.75) + "px";
-// credit.style.left= innerWidth*0.25 + "px";
 
 
 class Jug { 
@@ -301,7 +298,6 @@ function animate(timeStamp) {
         fillamount = totalScore;
     };
     reserver.gradient(fillamount);
-    console.log(fillamount);
 
     collected(newPlayer, water)
     waterlevel = ((maxwaterlevel/n_water) * score) + 1;
@@ -310,7 +306,7 @@ function animate(timeStamp) {
         startTime = timeStamp;
     }
     const level = 1
-    const timelimit = 2; // in sec
+    const timelimit = 120; // in sec
     const ms = 10
     const elapsedTime = timeStamp - startTime;
     timer = (timelimit*ms) - Math.round((elapsedTime / 1000)*ms)
