@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    overflow: hidden;
     background-color: rgba(34, 77, 80, 1) !important;
     padding-top: 0%;
     font-family: 'Montserrat Alternates', sans-serif !important;
@@ -72,4 +71,54 @@ img {
 .navbar {
     position: fixed !important;
     z-index: 1000;
+}
+
+.welcome {
+    height: 10vh;
+    width: 60vw;
+    position: relative;
+    top: 5vh;
+    font-size: 2.5vw;
+    text-align: center;
+    color: rgba(255, 165, 0, 1);
+    letter-spacing: 0.1vw;
+    word-spacing: 0.5vw;
+    font-weight:normal;
+}
+#author {
+    color: rgb(254, 255, 254);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#fp {
+    color: rgb(193, 223, 163);
+}
+#harvard{
+    color:#A41034;
+    font-weight: 900;
+    font-family: 'Crimson Text', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#prof{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.para {
+    font-size: 2vw;
+    font-weight: bolder;
+    color: rgb(193, 223, 163);
+    
+}
+.aboutproject > p{
+    font-size: 2vw !important;
+    position: relative;
+    text-align: start;
+    word-spacing:0.5vw;
+    letter-spacing: 0.15vw;
+    line-height: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn-warning:hover {
+    background-color: rgb(99, 211, 231) !important;
 }
