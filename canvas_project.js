@@ -11,6 +11,8 @@ canvas.style.top = innerHeight * 0.1 + "px"
 c = canvas.getContext('2d');
 cshape = canvas.getBoundingClientRect();
 
+let n_obstacle = 10;
+let n_waterdrops = 10;
 
 scoreplate.style.left = cshape.x + (cshape.width * 0.75) + "px";
 scoreplate.style.top =  cshape.bottom + 10 + "px"
@@ -126,7 +128,7 @@ function obs() {
             obstacles.push(newObstacle);
             newObstacle.draw();
         }
-    } while (obstacles.length < 10); // Adjust the condition as needed
+    } while (obstacles.length < n_obstacle); // Adjust the condition as needed
 }
 
 class Obj  {
@@ -194,7 +196,7 @@ function collected(player, collectibles) {
                 score ++;    
             }
         if (collectibles.length < 1) {
-            waterDrops(water, 10, obstacles);
+            waterDrops(water, n_waterdrops, obstacles);
         }
     }
 }
@@ -246,7 +248,7 @@ function firstload() {
     }
     obs();
 
-    waterDrops(water, 10, obstacles);
+    waterDrops(water, n_waterdrops, obstacles);
 
     n_water = water.length;
     controlkey.collision.coll_object = obstacles; 
